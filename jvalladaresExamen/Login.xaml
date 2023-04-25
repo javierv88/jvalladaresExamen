@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jvalladaresExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de Inicio" FontSize="30" TextColor="white" HorizontalTextAlignment="Center"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"  WidthRequest="100" HeightRequest="100"/>
+            
+            <Entry x:Name="txtdato" Placeholder="Dato" MaxLength="5"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="USUARIO" FontSize="25" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Placeholder="USUARIO" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="CONTRASENA" FontSize="25" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtContrasena" Placeholder="CONTRASENA" Grid.Row="1" Grid.Column="1"/>
+                
+             
+
+            </Grid>
+            <Button x:Name="btnIniciar" Text="INICIAR" HorizontalOptions="Center" Clicked="btnIniciar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
